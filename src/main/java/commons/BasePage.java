@@ -18,6 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageUIs.liveGuru.users.UserBasePageUI;
+
 public class BasePage {
 	WebDriver driver;
 
@@ -544,6 +546,26 @@ public class BasePage {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void clickToAccountHeaderLink() {
+		waitForElementClickable(UserBasePageUI.ACCOUNT_HEADER_LINK);
+		clickToElement(UserBasePageUI.ACCOUNT_HEADER_LINK);
+	}
+
+	public void openPageInAccountHeaderByName(String pageName) {
+		waitForElementClickable(UserBasePageUI.PAGE_LINK_IN_ACCOUNT_HEADER, pageName);
+		clickToElement(UserBasePageUI.PAGE_LINK_IN_ACCOUNT_HEADER, pageName);
+	}
+
+	public void openPageInSizeBarByName(String pageNameInSizeBar) {
+		waitForElementClickable(UserBasePageUI.PAGE_LINK_IN_SIZEBAR, pageNameInSizeBar);
+		clickToElement(UserBasePageUI.PAGE_LINK_IN_SIZEBAR, pageNameInSizeBar);
+	}
+
+	public void openPageInFooterByName(String pageName) {
+		waitForElementClickable(UserBasePageUI.PAGE_LINK_IN_FOOTER_BY_NAME, pageName);
+		clickToElement(UserBasePageUI.PAGE_LINK_IN_FOOTER_BY_NAME, pageName);
 	}
 
 }

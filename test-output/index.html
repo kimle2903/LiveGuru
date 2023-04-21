@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Live_Guru" class="navigator-link">
+              <span class="suite-name border-failed">Live Guru</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Live_Guru" class="navigator-link ">
+                    <span>runLiveGuruUserTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Live_Guru" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Live_Guru" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Live_Guru" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Live_Guru" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Live_Guru" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Live_Guru" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Live_Guru" class="hide-methods failed suite-Live_Guru"> (hide)</a> <!-- hide-methods failed suite-Live_Guru -->
+                      <a href="#" panel-name="suite-Live_Guru" class="show-methods failed suite-Live_Guru"> (show)</a> <!-- show-methods failed suite-Live_Guru -->
+                    </span>
+                    <div class="method-list-content failed suite-Live_Guru">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_01_Font_End" class="method navigator-link" hash-for-method="TC_05_Verify_Discount_Coupon_Work_Correctly">TC_05_Verify_Discount_Coupon_Work_Correctly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Live_Guru -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Live_Guru" class="hide-methods passed suite-Live_Guru"> (hide)</a> <!-- hide-methods passed suite-Live_Guru -->
+                      <a href="#" panel-name="suite-Live_Guru" class="show-methods passed suite-Live_Guru"> (show)</a> <!-- show-methods passed suite-Live_Guru -->
+                    </span>
+                    <div class="method-list-content passed suite-Live_Guru">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.commons.Common_01_Register_Success" class="method navigator-link" hash-for-method="TC_01_Register">TC_01_Register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.commons.Common_01_Register_Success" class="method navigator-link" hash-for-method="TC_02_Verify_Information_User">TC_02_Verify_Information_User</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_01_Font_End" class="method navigator-link" hash-for-method="TC_03_Login_Success">TC_03_Login_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_01_Font_End" class="method navigator-link" hash-for-method="TC_04_Verify_Cost_Of_Product">TC_04_Verify_Cost_Of_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_01_Font_End" class="method navigator-link" hash-for-method="TC_06_Verify_Add_500_Item_Of_Product">TC_06_Verify_Add_500_Item_Of_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_01_Font_End" class="method navigator-link" hash-for-method="TC_07_Compare_Two_Product">TC_07_Compare_Two_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_02_Font_End" class="method navigator-link" hash-for-method="TC_08_Verify_Share_Wishlist">TC_08_Verify_Share_Wishlist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_02_Font_End" class="method navigator-link" hash-for-method="TC_09_Verify_Add_Your_Review">TC_09_Verify_Add_Your_Review</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_02_Font_End" class="method navigator-link" hash-for-method="TC_10_Verify_Able_Purchase_Product">TC_10_Verify_Able_Purchase_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Live_Guru" title="com.liveGuru.users.User_02_Font_End" class="method navigator-link" hash-for-method="TC_11_Verify_Search_Funtion">TC_11_Verify_Search_Funtion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Live_Guru -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Live_Guru" class="panel Live_Guru">
+          <div class="suite-Live_Guru-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.liveGuru.users.User_01_Font_End</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_05_Verify_Discount_Coupon_Work_Correctly">
+                  </a> <!-- TC_05_Verify_Discount_Coupon_Work_Correctly -->
+                  <span class="method-name">TC_05_Verify_Discount_Coupon_Work_Correctly</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [$95.00] but found [$100.00]
+	at com.liveGuru.users.User_01_Font_End.TC_05_Verify_Discount_Coupon_Work_Correctly(User_01_Font_End.java:84)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Live_Guru-class-failed -->
+          <div class="suite-Live_Guru-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.liveGuru.users.User_01_Font_End</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_03_Login_Success">
+                  </a> <!-- TC_03_Login_Success -->
+                  <span class="method-name">TC_03_Login_Success</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_04_Verify_Cost_Of_Product">
+                  </a> <!-- TC_04_Verify_Cost_Of_Product -->
+                  <span class="method-name">TC_04_Verify_Cost_Of_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_06_Verify_Add_500_Item_Of_Product">
+                  </a> <!-- TC_06_Verify_Add_500_Item_Of_Product -->
+                  <span class="method-name">TC_06_Verify_Add_500_Item_Of_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_07_Compare_Two_Product">
+                  </a> <!-- TC_07_Compare_Two_Product -->
+                  <span class="method-name">TC_07_Compare_Two_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Live_Guru-class-passed -->
+          <div class="suite-Live_Guru-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.liveGuru.users.User_02_Font_End</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_08_Verify_Share_Wishlist">
+                  </a> <!-- TC_08_Verify_Share_Wishlist -->
+                  <span class="method-name">TC_08_Verify_Share_Wishlist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_09_Verify_Add_Your_Review">
+                  </a> <!-- TC_09_Verify_Add_Your_Review -->
+                  <span class="method-name">TC_09_Verify_Add_Your_Review</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_10_Verify_Able_Purchase_Product">
+                  </a> <!-- TC_10_Verify_Able_Purchase_Product -->
+                  <span class="method-name">TC_10_Verify_Able_Purchase_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_11_Verify_Search_Funtion">
+                  </a> <!-- TC_11_Verify_Search_Funtion -->
+                  <span class="method-name">TC_11_Verify_Search_Funtion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Live_Guru-class-passed -->
+          <div class="suite-Live_Guru-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.liveGuru.commons.Common_01_Register_Success</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_01_Register">
+                  </a> <!-- TC_01_Register -->
+                  <span class="method-name">TC_01_Register</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_02_Verify_Information_User">
+                  </a> <!-- TC_02_Verify_Information_User -->
+                  <span class="method-name">TC_02_Verify_Information_User</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Live_Guru-class-passed -->
+        </div> <!-- panel Live_Guru -->
+        <div panel-name="test-xml-Live_Guru" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/macpro/Desktop/Automation FC/LiveGuru/src/test/resources/runLiveGuruUserTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Live Guru&quot;&gt;
+  &lt;parameter name=&quot;role&quot; value=&quot;user&quot;/&gt;
+  &lt;parameter name=&quot;envName&quot; value=&quot;local&quot;/&gt;
+  &lt;parameter name=&quot;envServer&quot; value=&quot;dev&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run with chrome browser&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.liveGuru.commons.Common_01_Register_Success&quot;/&gt;
+      &lt;class name=&quot;com.liveGuru.users.User_01_Font_End&quot;/&gt;
+      &lt;class name=&quot;com.liveGuru.users.User_02_Font_End&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run with chrome browser --&gt;
+&lt;/suite&gt; &lt;!-- Live Guru --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Live_Guru" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Live Guru</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Run with chrome browser (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Live_Guru" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Live Guru</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Live_Guru" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Live Guru</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Live_Guru');
+function tableData_Live_Guru() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC_10_Verify_Able_Purchase_Product')
+data.setCell(0, 2, 'com.liveGuru.users.User_02_Font_End')
+data.setCell(0, 3, 22852);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_09_Verify_Add_Your_Review')
+data.setCell(1, 2, 'com.liveGuru.users.User_02_Font_End')
+data.setCell(1, 3, 15217);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_07_Compare_Two_Product')
+data.setCell(2, 2, 'com.liveGuru.users.User_01_Font_End')
+data.setCell(2, 3, 8076);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_08_Verify_Share_Wishlist')
+data.setCell(3, 2, 'com.liveGuru.users.User_02_Font_End')
+data.setCell(3, 3, 8044);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_11_Verify_Search_Funtion')
+data.setCell(4, 2, 'com.liveGuru.users.User_02_Font_End')
+data.setCell(4, 3, 7360);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_04_Verify_Cost_Of_Product')
+data.setCell(5, 2, 'com.liveGuru.users.User_01_Font_End')
+data.setCell(5, 3, 6230);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_03_Login_Success')
+data.setCell(6, 2, 'com.liveGuru.users.User_01_Font_End')
+data.setCell(6, 3, 5785);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_06_Verify_Add_500_Item_Of_Product')
+data.setCell(7, 2, 'com.liveGuru.users.User_01_Font_End')
+data.setCell(7, 3, 4711);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_05_Verify_Discount_Coupon_Work_Correctly')
+data.setCell(8, 2, 'com.liveGuru.users.User_01_Font_End')
+data.setCell(8, 3, 4254);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC_01_Register')
+data.setCell(9, 2, 'com.liveGuru.commons.Common_01_Register_Success')
+data.setCell(9, 3, 3705);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC_02_Verify_Information_User')
+data.setCell(10, 2, 'com.liveGuru.commons.Common_01_Register_Success')
+data.setCell(10, 3, 1660);
+window.suiteTableData['Live_Guru']= { tableData: data, tableDiv: 'times-div-Live_Guru'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Live_Guru">
+              </div> <!-- times-div-Live_Guru -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Live_Guru" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Live Guru</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Live_Guru" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Live_Guru" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveGuru.commons.Common_01_Register_Success</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(local, dev, Windows, 10, chrome, user)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_01_Register</span>
+                <span class="method-start">13035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_02_Verify_Information_User</span>
+                <span class="method-start">17027 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">18702 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveGuru.users.User_01_Font_End</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(local, dev, Windows, 10, chrome, user)</span>
+                <span class="method-start">19085 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_03_Login_Success</span>
+                <span class="method-start">27273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_04_Verify_Cost_Of_Product</span>
+                <span class="method-start">33069 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_05_Verify_Discount_Coupon_Work_Correctly</span>
+                <span class="method-start">39305 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_06_Verify_Add_500_Item_Of_Product</span>
+                <span class="method-start">43571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_07_Compare_Two_Product</span>
+                <span class="method-start">48284 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">56363 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveGuru.users.User_02_Font_End</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(local, dev, Windows, 10, chrome, user)</span>
+                <span class="method-start">56621 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_08_Verify_Share_Wishlist</span>
+                <span class="method-start">67118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_09_Verify_Add_Your_Review</span>
+                <span class="method-start">75166 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_10_Verify_Able_Purchase_Product</span>
+                <span class="method-start">90386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_11_Verify_Search_Funtion</span>
+                <span class="method-start">113240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">120608 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
